@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: Orders and customers relatioship data.
+    columns:
+      - name: order_id
+        description: Foreign key and Primary Key for orders and customers relatioship from stg_orders.
+        tests:
+          - not_null
+      - name: customer_id
+        description: Foreign key and Primary Key for orders and customers relatioship from stg_customers.
+        tests:
+          - not_null
+      - name: order_date
+        description: Date for the order.
+        tests:
+          - not_null
+      - name: amount
+        description: USDs amount for the order.
+        tests:
+          - not_null
