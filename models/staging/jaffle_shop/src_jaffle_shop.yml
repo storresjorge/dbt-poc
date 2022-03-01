@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: jaffle_shop
     description: A clone of a Snowflake Jaffle Shop application database.
-    database: raw
+    database: gpbidb
     schema: jaffle_shop
     tables:
       - name: customers
