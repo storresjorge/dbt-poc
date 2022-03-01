@@ -5,4 +5,4 @@ with payments as (
 select order_id, sum(amount) as total_amount
 from payments 
 group by order_id
-having total_amount < 0
+having sum(amount) < 0
